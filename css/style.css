@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-size: 24px;
+}
+
+.project {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px; /* Økt margin mellom hvert prosjekt */
+    display: flex;
+    flex-direction: column; /* Endret til kolonne for å plassere knappene under hverandre */
+    align-items: center;
+}
+
+.project_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    overflow: auto; /* Add horizontal scrolling if content overflows */
+}
+
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.delete-button {
+    text-decoration: none;
+    background-color: rgb(216, 216, 216);
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    border: none;
+    width: 8px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.project h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px; /* Legg til margin under tittelen */
+}
+
+.project .link_button {
+    margin-bottom: 5px; /* Legg til margin mellom knappene */
+}
+
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.link_button {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.link_button:hover {
+    background-color: #0056b3;
+}
+
+#projects-container {
+    margin-top: 20px; /* Justerer avstanden mellom toppen av skjermen og projects-container */
+    margin-bottom: 20px; /* Justerer avstanden mellom projects-container og bunnen av skjermen */
+}
